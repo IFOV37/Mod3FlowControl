@@ -12,6 +12,16 @@ namespace Mod3FlowControl
         {
 
             // Practice Q 1
+
+            int numVal = 7;
+
+            if (numVal >= 0)
+                Console.WriteLine(numVal);
+            else
+                Console.WriteLine(Math.Abs(numVal));
+
+            Console.ReadLine();
+
         }
     }
 }
