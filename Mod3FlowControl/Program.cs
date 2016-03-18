@@ -13,14 +13,24 @@ namespace Mod3FlowControl
 
             // Practice Q 1
 
-            int numVal = 7;
+            //int numVal = 7;
 
-            if (numVal >= 0)
-                Console.WriteLine(numVal);
-            else
-                Console.WriteLine(Math.Abs(numVal));
+            //if (numVal >= 0)
+            //    Console.WriteLine(numVal);
+            //else
+            //    Console.WriteLine(Math.Abs(numVal));
 
+            //Console.ReadLine();
+
+            // P Q 2
+
+            for (int number = 1; number < 100; number++)
+            {
+                if (number % 3 == 0)
+                    Console.WriteLine(number + "Buzz!");
+            }
             Console.ReadLine();
+
 
         }
     }
