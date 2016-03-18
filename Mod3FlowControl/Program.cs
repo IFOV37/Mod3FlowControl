@@ -24,14 +24,21 @@ namespace Mod3FlowControl
 
             // P Q 2
 
-            for (int number = 1; number < 100; number++)
+            //for (int number = 1; number < 100; number++)
+            //{
+            //    if (number % 3 == 0)
+            //        Console.WriteLine(number + "Buzz!");
+            //}
+            //Console.ReadLine();
+
+
+            // PQ 3
+
+            for (int i = 1; i <= 10; i++)
             {
-                if (number % 3 == 0)
-                    Console.WriteLine(number + "Buzz!");
+                Console.WriteLine(Math.Pow(2, i));
             }
             Console.ReadLine();
-
-
         }
     }
 }
