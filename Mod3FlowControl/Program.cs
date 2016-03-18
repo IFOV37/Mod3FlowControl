@@ -34,10 +34,20 @@ namespace Mod3FlowControl
 
             // PQ 3
 
-            for (int i = 1; i <= 10; i++)
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine(Math.Pow(2, i));
+            //}
+            //Console.ReadLine();
+
+            //PQ4
+            int sum = 0;
+
+            for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(Math.Pow(2, i));
+                sum = sum + i;
             }
+            Console.WriteLine(sum);
             Console.ReadLine();
         }
     }
