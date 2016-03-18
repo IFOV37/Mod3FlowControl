@@ -41,14 +41,47 @@ namespace Mod3FlowControl
             //Console.ReadLine();
 
             //PQ4
-            int sum = 0;
+            //int sum = 0;
 
-            for (int i = 1; i <= 100; i++)
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    sum = sum + i;
+            //}
+            //Console.WriteLine(sum);
+            //Console.ReadLine();
+
+            // LAB
+
+            int number = new Random().Next(1, 10);
+            string inputExtractor;
+
+            Console.Write("Enter a number between 1 and 9 to guess the value: ");
+            inputExtractor = Console.ReadLine();
+            int userGuess = int.Parse(inputExtractor);
+
+            for (int i = 0; i < 5; i++)
             {
-                sum = sum + i;
+                if (userGuess == number)
+                {
+                    Console.WriteLine("You won! Way to go!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Try again.");
+                    if (userGuess > number)
+                        Console.WriteLine("Guess lower!");
+                    else
+                        Console.WriteLine("Guess higher!");
+                    inputExtractor = Console.ReadLine();
+                    userGuess = int.Parse(inputExtractor);
+                }
+
+            
             }
-            Console.WriteLine(sum);
+
             Console.ReadLine();
+
         }
     }
 }
